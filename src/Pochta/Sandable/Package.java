@@ -11,18 +11,13 @@ public class Package {
         this.price = price;
     }
 
-    public Package(int price) {
-        this.price = price;
-    }
-
     public String getContent() {
         return content;
     }
+
     public int getPrice() {
         return price;
-
     }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

@@ -2,13 +2,17 @@ package Pochta.Sandable;
 
 public class MailPackage extends AbstractSendable{
     private final Package content;
+
+    public Package getContent() {
+        return content;
+    }
+
     public MailPackage(String from, String to, Package content) {
         super(from, to);
         this.content = content;
     }
-    public Package getContent() {
-        return content;
-    }
+
+
 
     @Override
     public boolean equals(Object o) {
@@ -19,6 +23,7 @@ public class MailPackage extends AbstractSendable{
         if (!content.equals(that.content)) return false;
         return true;
     }
+
 
 
 }
